@@ -131,7 +131,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyt-CG-jzF">
-                                <rect key="frame" x="158" y="90" width="99" height="30"/>
+                                <rect key="frame" x="158" y="233" width="99" height="30"/>
                                 <state key="normal" title="RESET SCORE">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
@@ -140,7 +140,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lau-wz-YSX">
-                                <rect key="frame" x="158" y="184" width="99" height="30"/>
+                                <rect key="frame" x="158" y="327" width="99" height="30"/>
                                 <state key="normal" title="RULES">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
@@ -149,7 +149,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tZb-Ck-a3v">
-                                <rect key="frame" x="169" y="278" width="76" height="30"/>
+                                <rect key="frame" x="169" y="421" width="76" height="30"/>
                                 <state key="normal" title="ABOUT US">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
@@ -168,7 +168,7 @@
                             <constraint firstItem="Lau-wz-YSX" firstAttribute="top" secondItem="nyt-CG-jzF" secondAttribute="bottom" constant="64" id="HoP-sI-AvZ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Lau-wz-YSX" secondAttribute="trailing" constant="137" id="Kk0-6o-6ir"/>
                             <constraint firstAttribute="trailingMargin" secondItem="tZb-Ck-a3v" secondAttribute="trailing" constant="149" id="c4N-LH-eJY"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="tZb-Ck-a3v" secondAttribute="bottom" constant="500" id="qej-ET-0K6"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="tZb-Ck-a3v" secondAttribute="bottom" constant="357" id="qej-ET-0K6"/>
                             <constraint firstItem="tZb-Ck-a3v" firstAttribute="leading" secondItem="Fms-ro-0DW" secondAttribute="leadingMargin" constant="149" id="uS0-rm-7K7"/>
                         </constraints>
                     </view>
