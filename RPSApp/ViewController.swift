@@ -9,6 +9,7 @@ class ViewController: UIViewController {
     
 
     @IBOutlet weak var cpuImage: UIImageView!
+    @IBOutlet weak var userImage: UIImageView!
     @IBOutlet public weak var cpuLabel: UILabel!
     @IBOutlet weak var statusLabel: UILabel!
     @IBOutlet public weak var youLabel: UILabel!
@@ -22,8 +23,9 @@ class ViewController: UIViewController {
     @IBAction func rockButton(_ sender: Any) {
         let cpuNumber = Int.random(in: 1...3)
         
+
+        
                 if cpuNumber == 1  {
-                    print("draw")
                     statusLabel.text = "DRAW"
                     statusLabel.textColor = UIColor.yellow
                 }
@@ -45,8 +47,10 @@ class ViewController: UIViewController {
 
                 }
         setHandImage(imageView: cpuImage, imageNumber: cpuNumber)
+        setUserImage(imageView: userImage, imageNumber: 1)
         
         UIView.transition(with: cpuImage, duration: 0.5, options: .transitionFlipFromTop, animations: nil, completion: nil)
+        UIView.transition(with: userImage, duration: 0.5, options: .transitionFlipFromTop, animations: nil, completion: nil)
         
         
     }
@@ -65,7 +69,6 @@ class ViewController: UIViewController {
 
         //cpu = rock, player = paper
         if cpuNumber == 2  {
-            print("draw")
             statusLabel.text = "DRAW"
             statusLabel.textColor = UIColor.yellow
         }
@@ -78,9 +81,17 @@ class ViewController: UIViewController {
             statusLabel.textColor = UIColor.red
 
         }
-setHandImage(imageView: cpuImage, imageNumber: cpuNumber)
+        setHandImage(imageView: cpuImage, imageNumber: cpuNumber)
+        setUserImage(imageView: userImage, imageNumber: 2)
 
-UIView.transition(with: cpuImage, duration: 0.5, options: .transitionFlipFromTop, animations: nil, completion: nil)
+
+        
+
+        UIView.transition(with: cpuImage, duration: 0.5, options: .transitionFlipFromTop, animations: nil, completion: nil)
+        UIView.transition(with: userImage, duration: 0.5, options: .transitionFlipFromTop, animations: nil, completion: nil)
+       
+        
+        
     }
     
     @IBAction func scissorsButton(_ sender: Any) {
@@ -104,13 +115,16 @@ UIView.transition(with: cpuImage, duration: 0.5, options: .transitionFlipFromTop
         
                 //cpu = rock, player = scissors
                 if cpuNumber == 3  {
-                    print("draw")
                     statusLabel.text = "DRAW"
                     statusLabel.textColor = UIColor.yellow
                 }
         setHandImage(imageView: cpuImage, imageNumber: cpuNumber)
+        setUserImage(imageView: userImage, imageNumber: 3)
+
         
         UIView.transition(with: cpuImage, duration: 0.5, options: .transitionFlipFromTop, animations: nil, completion: nil)
+        UIView.transition(with: userImage, duration: 0.5, options: .transitionFlipFromTop, animations: nil, completion: nil)
+       
     }
     
     @IBAction func settingsButton(_ sender: Any) {
@@ -131,6 +145,8 @@ UIView.transition(with: cpuImage, duration: 0.5, options: .transitionFlipFromTop
         
         playerPoints = 0
         cpuPoints = 0
+        statusLabel?.text = "GO"
+        statusLabel?.textColor = UIColor.black
         youLabel?.text = "YOU: \(playerPoints)"
         cpuLabel?.text = "CPU: \(cpuPoints)"
     }
@@ -148,4 +164,18 @@ UIView.transition(with: cpuImage, duration: 0.5, options: .transitionFlipFromTop
             print("error")
         }
     }
+    func setUserImage(imageView:UIImageView, imageNumber:Int) {
+        switch imageNumber {
+        case 1:
+            imageView.image = UIImage(named: "rockBig")
+        case 2:
+            imageView.image = UIImage(named: "paperBig")
+        case 3:
+            imageView.image = UIImage(named: "scissorsBig")
+        default:
+            print("error")
+        }
 }
+}
+
+
