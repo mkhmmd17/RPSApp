@@ -139,15 +139,6 @@
                                     <action selector="resetButton:" destination="CFG-Ns-vAq" eventType="touchUpInside" id="cta-f8-pHn"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lau-wz-YSX">
-                                <rect key="frame" x="158" y="327" width="99" height="30"/>
-                                <state key="normal" title="RULES">
-                                    <color key="titleColor" systemColor="labelColor"/>
-                                </state>
-                                <connections>
-                                    <segue destination="oGd-CW-DuS" kind="presentation" id="n5g-f3-WfP"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tZb-Ck-a3v">
                                 <rect key="frame" x="169" y="421" width="76" height="30"/>
                                 <state key="normal" title="ABOUT US">
@@ -157,18 +148,25 @@
                                     <segue destination="zoG-IY-g4s" kind="presentation" id="msp-Xs-ahe"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lau-wz-YSX">
+                                <rect key="frame" x="184" y="326" width="47" height="30"/>
+                                <state key="normal" title="RULES">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="oGd-CW-DuS" kind="presentation" id="n5g-f3-WfP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rCS-90-bso"/>
                         <color key="backgroundColor" systemColor="systemGray2Color"/>
                         <constraints>
                             <constraint firstItem="nyt-CG-jzF" firstAttribute="leading" secondItem="Fms-ro-0DW" secondAttribute="leadingMargin" constant="138" id="0ZO-KH-Ws6"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="nyt-CG-jzF" secondAttribute="trailing" constant="137" id="4P9-Xu-Wto"/>
-                            <constraint firstItem="Lau-wz-YSX" firstAttribute="leading" secondItem="Fms-ro-0DW" secondAttribute="leadingMargin" constant="138" id="DF9-OS-gVd"/>
-                            <constraint firstItem="tZb-Ck-a3v" firstAttribute="top" secondItem="Lau-wz-YSX" secondAttribute="bottom" constant="64" id="EAn-ei-FWh"/>
-                            <constraint firstItem="Lau-wz-YSX" firstAttribute="top" secondItem="nyt-CG-jzF" secondAttribute="bottom" constant="64" id="HoP-sI-AvZ"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Lau-wz-YSX" secondAttribute="trailing" constant="137" id="Kk0-6o-6ir"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="tZb-Ck-a3v" secondAttribute="trailing" constant="149" id="c4N-LH-eJY"/>
+                            <constraint firstItem="Lau-wz-YSX" firstAttribute="leading" secondItem="Fms-ro-0DW" secondAttribute="leadingMargin" constant="164" id="DF9-OS-gVd"/>
+                            <constraint firstItem="tZb-Ck-a3v" firstAttribute="top" secondItem="Lau-wz-YSX" secondAttribute="bottom" constant="65" id="EAn-ei-FWh"/>
+                            <constraint firstItem="Lau-wz-YSX" firstAttribute="top" secondItem="nyt-CG-jzF" secondAttribute="bottom" constant="63" id="HoP-sI-AvZ"/>
                             <constraint firstAttribute="bottomMargin" secondItem="tZb-Ck-a3v" secondAttribute="bottom" constant="357" id="qej-ET-0K6"/>
+                            <constraint firstItem="nyt-CG-jzF" firstAttribute="top" secondItem="Fms-ro-0DW" secondAttribute="topMargin" constant="233" id="qmw-iy-lrE"/>
                             <constraint firstItem="tZb-Ck-a3v" firstAttribute="leading" secondItem="Fms-ro-0DW" secondAttribute="leadingMargin" constant="149" id="uS0-rm-7K7"/>
                         </constraints>
                     </view>
@@ -209,7 +207,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KKF-ei-O2k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1678" y="66"/>
+            <point key="canvasLocation" x="1677" y="113"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="f3Q-f2-w1b">
@@ -238,7 +236,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tig-7Z-Fo8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1676.8115942028987" y="781.47321428571422"/>
+            <point key="canvasLocation" x="893" y="919"/>
         </scene>
     </scenes>
     <resources>

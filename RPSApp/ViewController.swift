@@ -7,7 +7,6 @@ class ViewController: UIViewController {
     //MARK:- Outlets
     //rock = 1, paper = 2, scissors = 3
     
-
     @IBOutlet weak var cpuImage: UIImageView!
     @IBOutlet weak var userImage: UIImageView!
     @IBOutlet public weak var cpuLabel: UILabel!
@@ -19,6 +18,7 @@ class ViewController: UIViewController {
     var cpuPoints = 0
     
     
+    //MARK: - ROCK button
     
     @IBAction func rockButton(_ sender: Any) {
         let cpuNumber = Int.random(in: 1...3)
@@ -47,7 +47,7 @@ class ViewController: UIViewController {
 
                 }
         setHandImage(imageView: cpuImage, imageNumber: cpuNumber)
-        setUserImage(imageView: userImage, imageNumber: 1)
+        setHandImage(imageView: userImage, imageNumber: 1)
         
         UIView.transition(with: cpuImage, duration: 0.5, options: .transitionFlipFromTop, animations: nil, completion: nil)
         UIView.transition(with: userImage, duration: 0.5, options: .transitionFlipFromTop, animations: nil, completion: nil)
@@ -55,6 +55,8 @@ class ViewController: UIViewController {
         
     }
     
+    //MARK: - PAPER button
+
     
     @IBAction func paperButton(_ sender: Any) {
         let cpuNumber = Int.random(in: 1...3)
@@ -82,7 +84,7 @@ class ViewController: UIViewController {
 
         }
         setHandImage(imageView: cpuImage, imageNumber: cpuNumber)
-        setUserImage(imageView: userImage, imageNumber: 2)
+        setHandImage(imageView: userImage, imageNumber: 2)
 
 
         
@@ -93,6 +95,9 @@ class ViewController: UIViewController {
         
         
     }
+    
+    //MARK: - SCISSORS button
+
     
     @IBAction func scissorsButton(_ sender: Any) {
         let cpuNumber = Int.random(in: 1...3)
@@ -119,7 +124,7 @@ class ViewController: UIViewController {
                     statusLabel.textColor = UIColor.yellow
                 }
         setHandImage(imageView: cpuImage, imageNumber: cpuNumber)
-        setUserImage(imageView: userImage, imageNumber: 3)
+        setHandImage(imageView: userImage, imageNumber: 3)
 
         
         UIView.transition(with: cpuImage, duration: 0.5, options: .transitionFlipFromTop, animations: nil, completion: nil)
@@ -150,8 +155,10 @@ class ViewController: UIViewController {
         youLabel?.text = "YOU: \(playerPoints)"
         cpuLabel?.text = "CPU: \(cpuPoints)"
     }
-//
-    //help with setting the images
+    
+    
+    //MARK: - Set Image
+
     func setHandImage(imageView:UIImageView, imageNumber:Int) {
         switch imageNumber {
         case 1:
@@ -164,18 +171,7 @@ class ViewController: UIViewController {
             print("error")
         }
     }
-    func setUserImage(imageView:UIImageView, imageNumber:Int) {
-        switch imageNumber {
-        case 1:
-            imageView.image = UIImage(named: "rockBig")
-        case 2:
-            imageView.image = UIImage(named: "paperBig")
-        case 3:
-            imageView.image = UIImage(named: "scissorsBig")
-        default:
-            print("error")
-        }
-}
+
 }
 
 
